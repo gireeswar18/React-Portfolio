@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./Components/Navbar.jsx";
+import Education from "./Components/Education.jsx";
+import Skills from "./Components/Skills.jsx";
+import Projects from "./Components/Projects.jsx";
+import Contact from "./Components/Contact.jsx";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<App />}></Route>
+        <Route path="/education" element={<Education />}></Route>
+        <Route path="/skills" element={<Skills />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="*" element={<div className="error">
+            <h1>404! Page Not Found!</h1>
+          </div>}></Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
