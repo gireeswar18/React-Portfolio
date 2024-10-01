@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Education() {
   return (
+    <section id="educationSection">
     <div>
       <div className="education-title">
         <h4>Education</h4>
@@ -66,5 +67,6 @@ export default function Education() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

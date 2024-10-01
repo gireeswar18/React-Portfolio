@@ -1,9 +1,9 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, {useState, useEffect } from "react";
 
 export default function Navbar() {
+  
   return (
-    <nav className="navbar navbar-expand-lg fixed-top bg-body-light">
+    <nav className="navbar navbar-expand-lg bg-body-light fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           Gireeswar
@@ -22,57 +22,29 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="mynav">
           <ul className="navbar-nav ms-md-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink
-                to="/"
-                className="nav-link"
-                style={({ isActive }) => ({
-                  color: isActive ? "blueviolet" : "black",
-                })}
-              >
+            <a href="#heroSection" className="nav-link">
                 Profile
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                to="/education"
-                style={({ isActive }) => ({
-                  color: isActive ? "blueviolet" : "black",
-                })}
-              >
+            <a href="#educationSection" className="nav-link">
                 Education
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                to="/skills"
-                style={({ isActive }) => ({
-                  color: isActive ? "blueviolet" : "black",
-                })}
-              >Skills</NavLink>
+            <a href="#skillsSection" className="nav-link">
+                Skills
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                to="/projects"
-                style={({ isActive }) => ({
-                  color: isActive ? "blueviolet" : "black",
-                })}
-              >
+              <a href="#projectsSection" className="nav-link">
                 Projects
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item last-item">
-            <NavLink
-                className="nav-link"
-                to="/contact"
-                style={({ isActive }) => ({
-                  color: isActive ? "blueviolet" : "black",
-                })}
-              >
+              <a href="#contactSection" className="nav-link">
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>

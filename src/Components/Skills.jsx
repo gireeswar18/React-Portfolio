@@ -12,6 +12,7 @@ import mongodb from '../Assets/mongodb.png';
 
 export default function Skills() {
   return (
+    <section id="skillsSection">
     <div>
       <div className="education-title">
         <h4>Skills</h4>
@@ -77,5 +78,6 @@ export default function Skills() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

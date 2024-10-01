@@ -13,6 +13,7 @@ export default function Projects() {
     window.open('https://spotify-clone-by-gireeswar.netlify.app/', '_blank');
   };
   return (
+    <section id="projectsSection">
     <div>
       <div className="education-title">
         <h4>Projects</h4>
@@ -173,5 +174,6 @@ export default function Projects() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

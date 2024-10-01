@@ -7,6 +7,7 @@ import instagram from '../Assets/instagram.png';
 
 export default function HeroSection() {
   return (
+    <section id="heroSection">
     <div className="hero-content-box">
       <div className="hero-content">
         <h5>Hi, I'm Gireeswar</h5>
@@ -38,5 +39,6 @@ export default function HeroSection() {
         <img srcSet={passpic} alt="pass" className="hero-image" />
       </div>
     </div>
+    </section>
   );
 }

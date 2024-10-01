@@ -27,6 +27,7 @@ export default function Contact() {
   };
 
   return (
+    <section id="contactSection">
     <div className="container contact">
       <div className="education-title">
         <h4>Contact</h4>
@@ -84,5 +85,6 @@ export default function Contact() {
         </form>
       </div>
     </div>
+    </section>
   );
 }

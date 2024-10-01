@@ -9,6 +9,10 @@
 	background-color: #f5fcff;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .error {
 	display: flex;
 	justify-content: center;
